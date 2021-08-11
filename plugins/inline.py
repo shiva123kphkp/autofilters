@@ -87,7 +87,7 @@ def get_reply_markup(query):
 
         ],
         [
-            ('🔍 Search again 🔎, switch_inline_query_current_chat=query)
+            ('🔍 Search again 🔎', switch_inline_query_current_chat=query)
         ]
         ]
     return InlineKeyboardMarkup(buttons)
