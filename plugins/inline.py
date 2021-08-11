@@ -84,7 +84,6 @@ def get_reply_markup(query):
     buttons = [
         [
             ('🖥️ How To Own 🖥️', url=f'{TUTORIAL}')
-
         ],
         [
             ('🔍 Search again 🔎', switch_inline_query_current_chat=query)
