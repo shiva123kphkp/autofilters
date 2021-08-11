@@ -14,19 +14,19 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/subinps/Media-Search-bot",
-    "repository": "https://github.com/subinps/Media-Search-bot",
+    "website": "https://youtube.com/channel/UCmGBpXoM-OEm-FacOccVKgQ",
+    "repository": "https://github.com/MRK-YT/MT-Media-Search-bot",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
             "value": ""
         },
         "API_ID": {
-            "description": "Get this value from https://my.telegram.org",
+            "description": "Get this value from https://my.telegram.org as @MT_MyTelegramOrg_BoT",
             "value": ""
         },
         "API_HASH": {
-            "description": "Get this value from https://my.telegram.org",
+            "description": "Get this value from https://my.telegram.org as @MT_MyTelegramOrg_BoT",
             "value": ""
         },
         "CHANNELS": {
@@ -34,11 +34,11 @@
             "value": ""
         },
         "ADMINS": {
-            "description": "Username or ID of Admin. Separate multiple Admins by space.",
+            "description": "Username or ID of Admin. Separate multiple Admins by space. @MT_ID_Bot",
             "value": ""
         },
         "AUTH_USERS": {
-            "description": "Username or ID of users to give access of inline search. Separate multiple users by space.\nLeave it empty if you don't want to restrict bot usage.",
+            "description": "Username or ID of users to give access of inline search. Separate multiple users by space.\nLeave it empty if you don't want to restrict bot usage. @MT_ID_Bot",
             "value": "",
             "required": false
         },
@@ -49,7 +49,7 @@
         },
         "START_MSG": {
             "description": "Welcome message for start command",
-            "value": "**Hi, I'm [Media Search Bot](https://github.com/subinps/Media-Search-bot) or you can call me as Auto-Filter Bot**\n\nHere you can search files in Inline mode as well as PM, Use the below buttons to search files or send me the name of file to search.",
+            "value": "**Hi, I'm [Media Search Bot or you can call me as Auto-Filter Bot**\n\nHere you can search files in Inline mode as well as PM, Use the below buttons to search files or send me the name of file to search.",
             "required": false
         },
         "USE_CAPTION_FILTER": {
@@ -58,7 +58,7 @@
             "required": false
         },
         "OMDB_API_KEY": {
-            "description": "Your OMBD API KEY, Fill if you want to generate a imdb poster of movie in autofilter.",
+            "description": "Watch Tutorial Video.",
             "value": "",
             "required": false
         },
@@ -73,16 +73,16 @@
             "required": false
         },
         "DATABASE_URI": {
-            "description": "mongoDB URI. Get this value from https://www.mongodb.com. For more help watch this video - https://youtu.be/dsuTn4qV2GA",
+            "description": "mongoDB URI. Get this value from https://www.mongodb.com. For more help watch this video - https://youtu.be/gBLTsH-IXr0",
             "value": ""
         },
         "DATABASE_NAME": {
-            "description": "Name of the database in mongoDB. For more help watch this video - https://youtu.be/dsuTn4qV2GA",
+            "description": "Name of the database in mongoDB. For more help watch this video - https://youtu.be/gBLTsH-IXr0",
             "value": ""
         },
         "COLLECTION_NAME": {
-            "description": "Name of the collections. Defaults to Telegram_files. If you are using the same database, then use different collection name for each bot",
-            "value": "Telegram_files",
+            "description": "Name of the collections. Defaults to Telegram_files. If you are using the same database, then use different collection name for each bot Telegram_files",
+            "value": "",
             "required": false
         },
         "CACHE_TIME": {
