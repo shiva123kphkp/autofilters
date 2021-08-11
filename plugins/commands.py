@@ -70,7 +70,7 @@ async def start(bot, cmd):
                         InlineKeyboardButton('🖥️ How To Own 🖥️', url=f'{TUTORIAL}')
                     ],
                     [
-                        InlineKeyboardButton('🔍 Search again 🔎', switch_inline_query_current_chat=query)
+                        InlineKeyboardButton('🔍 Search again 🔎', switch_inline_query_current_chat='')
                     ]
                     ]
                 await bot.send_cached_media(
