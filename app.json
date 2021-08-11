@@ -58,7 +58,7 @@
             "required": false
         },
         "OMDB_API_KEY": {
-            "description": "Watch Tutorial Video.",
+            "description": "Watch Tutorial Video. https://youtu.be/FCU_XJmyG_U",
             "value": "",
             "required": false
         },
