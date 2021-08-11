@@ -67,7 +67,6 @@ async def start(bot, cmd):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                    [
                         InlineKeyboardButton('🖥️ How To Own 🖥️', url=f'{TUTORIAL}')
                     ],
                     [
