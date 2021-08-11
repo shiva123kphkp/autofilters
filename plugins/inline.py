@@ -3,7 +3,7 @@ from pyrogram import Client, emoji, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InlineQueryResultCachedDocument
 
 from utils import get_search_results, is_subscribed
-from info import CACHE_TIME, AUTH_USERS, AUTH_CHANNEL, CUSTOM_FILE_CAPTION
+from info import CACHE_TIME, AUTH_USERS, AUTH_CHANNEL, CUSTOM_FILE_CAPTION, TUTORIAL
 
 logger = logging.getLogger(__name__)
 cache_time = 0 if AUTH_USERS or AUTH_CHANNEL else CACHE_TIME
@@ -83,8 +83,11 @@ async def answer(bot, query):
 def get_reply_markup(query):
     buttons = [
         [
-            InlineKeyboardButton('Search again', switch_inline_query_current_chat=query),
-            InlineKeyboardButton('Bot Updates', url='https://t.me/Mo_Tech_YT')
+            ('🖥️ How To Own 🖥️, url=f"{TUTORIAL}")
+
+        ],
+        [
+            ('🔍 Search again 🔎, switch_inline_query_current_chat=query)
         ]
         ]
     return InlineKeyboardMarkup(buttons)
