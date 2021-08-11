@@ -1,6 +1,18 @@
 # Modified Version Of [Media Search bot](https://github.com/MRK-YT/MT-Media-Search-bot)
 
+</a>
+</p>
+<p align="center">
+  <a href="https://github.com/MRK-YT/MT-Media-Search-bot/stargazers">
+    <img src="https://img.shields.io/github/stars/MRK-YT/MT-Media-Search-bot?style=social">
 
+  </a>
+  
+  <a href="https://github.com/MRK-YT/MT-Media-Search-bot/fork">
+    <img src="https://img.shields.io/github/forks/MRK-YT/MT-Media-Search-bot?label=Fork&style=social">
+
+  </a>  
+</p>
 
   
 
