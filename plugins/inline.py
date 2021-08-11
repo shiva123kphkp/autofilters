@@ -83,7 +83,7 @@ async def answer(bot, query):
 def get_reply_markup(query):
     buttons = [
         [
-            ('🖥️ How To Own 🖥️, url=f"{TUTORIAL}")
+            ('🖥️ How To Own 🖥️', url=f"{TUTORIAL}")
 
         ],
         [
