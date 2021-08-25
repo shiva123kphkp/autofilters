@@ -4,7 +4,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InlineQue
 
 from utils import get_search_results, is_subscribed
 from info import CACHE_TIME, AUTH_USERS, AUTH_CHANNEL, CUSTOM_FILE_CAPTION
-from info import TUTORIAL
+
 logger = logging.getLogger(__name__)
 cache_time = 0 if AUTH_USERS or AUTH_CHANNEL else CACHE_TIME
 
@@ -61,12 +61,19 @@ async def answer(bot, query):
         if string:
             switch_pm_text += f" for {string}"
 
-        await query.answer(results=results,
+        try:
+            await query.answer(results=results,
                            is_personal = True,
                            cache_time=cache_time,
                            switch_pm_text=switch_pm_text,
                            switch_pm_parameter="start",
                            next_offset=str(next_offset))
+        except Exception as e:
+            logging.exception(str(e))
+            await query.answer(results=[], is_personal=True,
+                           cache_time=cache_time,
+                           switch_pm_text=str(e)[:63],
+                           switch_pm_parameter="error")
     else:
 
         switch_pm_text = f'{emoji.CROSS_MARK} No results'
@@ -102,4 +109,3 @@ def get_size(size):
         i += 1
         size /= 1024.0
     return "%.2f %s" % (size, units[i])
-
